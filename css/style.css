@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* Foundation */
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: #333;
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Layout */
+
+.wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Component */
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Header / FV */
+
+#header {
+    background-image: url(../img/fv-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.fv-content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.fv-box {
+    border: 1px solid #fff;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+}
+
+.site-name {
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+}
+
+.fv-text {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.9);
+}
+
+/* Nav */
+
+/* About */
+
+/* Skills */
+
+/* Works */
+
+/* Contact */
+
+/* Footer */
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {}
