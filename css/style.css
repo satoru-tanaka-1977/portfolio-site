@@ -48,7 +48,7 @@ ul {
     position: relative;
 }
 
-.fv-content {
+#header .fv-content {
     position: absolute;
     top: 30%;
     left: 23%;
@@ -57,35 +57,137 @@ ul {
     color: #fff;
 }
 
-.fv-box {
-    border: 1px solid rgba(255,255,255,0.7);
+#header .fv-box {
+    border: 1px solid rgba(255, 255, 255, 0.7);
     padding: 20px 40px;
     margin-bottom: 15px;
     background: rgba(0, 0, 0, 0.3);
 }
 
-.site-title {
+#header .site-title {
     font-size: 3rem;
     font-weight: bold;
     letter-spacing: 0.3em;
 }
 
-.site-name {
+#header .site-name {
     font-size: 2rem;
     letter-spacing: 0.2em;
 }
 
-.fv-text {
+#header .fv-text {
     font-size: 1rem;
     letter-spacing: 0.1em;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.9);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 /* Nav */
 
+#nav {
+    background-color: #6d238d;
+}
+
+#nav .nav-list {
+    display: flex;
+    justify-content: center;
+}
+
+#nav .nav-list a {
+    color: #fff;
+    padding: 15px 40px;
+    display: block;
+}
+
+#nav .nav-list a:hover {
+    opacity: 0.7;
+}
+
 /* About */
 
+#about {
+    padding: 100px 0;
+}
+
+.about-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.about-image {
+    float: left;
+    width: 220px;
+    margin: 0 40px 24px 0;
+    border-radius: 10px;
+}
+
+.about-catch {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
 /* Skills */
+
+/* Skills */
+
+#skills {
+    padding: 100px 0;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-card {
+    width: calc((100% - 60px) / 3);
+
+    padding: 30px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+
+    background-color: #fff;
+}
+
+.skill-card h3 {
+    margin-bottom: 20px;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.skill-card p {
+    margin-bottom: 15px;
+
+    line-height: 1.8;
+}
+
+.skill-card p:last-child {
+    margin-bottom: 0;
+}
+
+.skill-card ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.skill-card li {
+    margin-bottom: 10px;
+}
+
+.skill-card li:last-child {
+    margin-bottom: 0;
+}
 
 /* Works */
 
