@@ -188,6 +188,59 @@ ul {
 
 /* Works */
 
+#works {
+    padding: 100px 0;
+}
+
+.works-category {
+    margin-bottom: 30px;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin-bottom: 80px;
+}
+
+.work-card {
+    width: calc((100% - 60px) / 3);
+
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    background-color: #fff;
+}
+
+.work-card img {
+    width: 100%;
+}
+
+.work-card h4 {
+    padding: 20px 20px 10px;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.work-skill {
+    padding: 0 20px;
+
+    font-size: 0.9rem;
+    color: #6d238d;
+    font-weight: 700;
+}
+
+.work-card p:last-child {
+    padding: 10px 20px 20px;
+}
+
 /* Contact */
 
 /* Footer */
