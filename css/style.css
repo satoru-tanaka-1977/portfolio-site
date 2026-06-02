@@ -205,6 +205,10 @@ ul {
     margin-bottom: 80px;
 }
 
+.works-list:last-child {
+    margin-bottom: 0;
+}
+
 .work-card {
     width: calc((100% - 30px) / 2);
     border: 1px solid #dcdcdc;
@@ -248,6 +252,28 @@ ul {
 }
 
 /* Contact */
+
+#contact {
+    padding: 100px 0;
+}
+
+#contact p {
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.contact-links {
+    margin-top: 40px;
+}
+
+.contact-links a {
+    color: #6d238d;
+    font-weight: 700;
+}
+
+#contact .contact-links p {
+    margin-bottom: 10px;
+}
 
 /* Footer */
 
