@@ -106,6 +106,8 @@ ul {
 
 #about {
     padding: 100px 0;
+    background: #fff;
+}
 }
 
 .about-content::after {
@@ -137,6 +139,7 @@ ul {
 
 #skills {
     padding: 100px 0;
+    background: #F8F5FB;
 }
 
 .skills-list {
@@ -190,6 +193,7 @@ ul {
 
 #works {
     padding: 100px 0;
+    background: #fff;
 }
 
 .works-category {
@@ -255,6 +259,7 @@ ul {
 
 #contact {
     padding: 100px 0;
+    background: #F4FAF8;
 }
 
 #contact p {
@@ -276,6 +281,17 @@ ul {
 }
 
 /* Footer */
+
+#footer {
+    padding: 30px 0;
+    background-color: #6d238d;
+    text-align: center;
+}
+
+#footer p {
+    color: #fff;
+    font-size: 0.875rem;
+}
 
 /* Responsive */
 
