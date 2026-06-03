@@ -33,8 +33,11 @@ ul {
 /* Component */
 
 .section-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 10px;
     margin-bottom: 30px;
 }
 
@@ -108,7 +111,6 @@ ul {
     padding: 100px 0;
     background: #fff;
 }
-}
 
 .about-content::after {
     content: "";
@@ -125,7 +127,7 @@ ul {
 
 .about-catch {
     margin-bottom: 30px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5;
 }
