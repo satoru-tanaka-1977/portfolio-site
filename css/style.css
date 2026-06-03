@@ -295,6 +295,148 @@ ul {
     font-size: 0.875rem;
 }
 
+/* nav */
+
+.toggle {
+    display: none;
+}
+
 /* Responsive */
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    #nav {
+        display: block;
+        position: fixed;
+        top: -100%;
+        /* 最初は上に隠す */
+        opacity: 0;
+        /* 最初は透明 */
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #6d238d;
+        width: 80%;
+        transition: all 0.5s;
+        z-index: 20;
+        border-radius: 0 0 10px 10px;
+        /* 下の角だけ少し丸くするとオシャレです */
+    }
+
+    #nav li {
+        border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+    }
+
+    #nav li:last-child {
+        border-bottom: none;
+    }
+
+    #nav a {
+        display: block;
+        text-align: center;
+        padding: 15px 40px;
+        color: #fff;
+        font-size: 1.125rem;
+    }
+
+    /* ハンバーガーメニューボタン_ベース */
+    .toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 30;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .toggle span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        /* 背景に馴染むよう白線にしました */
+        border-radius: 4px;
+        transition: all 0.5s;
+    }
+
+    .toggle span:nth-child(1) {
+        top: 5px;
+    }
+
+    .toggle span:nth-child(2) {
+        top: 14px;
+    }
+
+    .toggle span:nth-child(3) {
+        top: 23px;
+    }
+
+    /* bodyに .active が付いた時、メニューがフワッと降りてくる */
+    .active #nav {
+        top: 0px;
+        /* 画面の一番上ぴったりに合わせる */
+        opacity: 1;
+        /* くっきり表示 */
+    }
+
+    /* メニューが開いている時だけボタンを画面固定にする */
+    .active .toggle {
+        position: fixed;
+    }
+
+    /* ×ボタンに変身 */
+    .active .toggle span:nth-child(1) {
+        transform: translateY(9px) rotate(-45deg);
+    }
+
+    .active .toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .active .toggle span:nth-child(3) {
+        transform: translateY(-9px) rotate(45deg);
+    }
+
+    /* FV調整 */
+    #header {
+        height: 500px;
+    }
+
+    .fv-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+    }
+
+    .site-title {
+        font-size: 2rem;
+        letter-spacing: 0.2em;
+    }
+
+    .site-name {
+        font-size: 1.5rem;
+    }
+
+    /* リストを縦並びにする */
+    .skills-list,
+    .works-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-card,
+    .work-card {
+        width: 100%;
+    }
+}
