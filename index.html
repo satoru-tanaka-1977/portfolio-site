@@ -421,6 +421,10 @@
             $('.toggle').on('click', function () {
                 $('body').toggleClass('active');
             });
+
+            $('.nav-list a').on('click', function () {
+                $('body').removeClass('active');
+            });
         });
     </script>
 </body>

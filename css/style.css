@@ -105,6 +105,15 @@ ul {
     opacity: 0.7;
 }
 
+/* Scroll Position */
+
+/* #about,
+#skills,
+#works,
+#contact {
+    scroll-margin-top: 120px;
+} */
+
 /* About */
 
 #about {
@@ -295,7 +304,8 @@ ul {
     font-size: 0.875rem;
 }
 
-/* nav */
+
+/* Responsive */
 
 .toggle {
     display: none;
@@ -303,117 +313,8 @@ ul {
 
 @media screen and (max-width: 768px) {
 
-    .wrapper {
-        width: 90%;
-    }
+    /* Header */
 
-    #nav {
-        display: block;
-        position: fixed;
-        top: -100%;
-        opacity: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: #6d238d;
-        width: 80%;
-        transition: all 0.5s;
-        z-index: 20;
-        border-radius: 0 0 10px 10px;
-    }
-
-    #nav .nav-list {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #nav li {
-        border-bottom: solid 1px rgba(255, 255, 255, 0.2);
-    }
-
-    #nav li:last-child {
-        border-bottom: none;
-    }
-
-    #nav a {
-        display: block;
-        text-align: center;
-        padding: 15px 40px;
-        color: #fff;
-        font-size: 1.125rem;
-    }
-
-    .active #nav {
-        top: 0px;
-        opacity: 1;
-    }
-
-    /* ーーー ボタンの動きとFVの調整（変更なし） ーーー */
-
-    .toggle {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 30;
-        width: 44px;
-        /* 押しやすいように少し大きく(44px) */
-        height: 44px;
-        /* 押しやすいように少し大きく(44px) */
-        cursor: pointer;
-        background-color: rgba(109, 35, 141, 0.9);
-        /* 紫色の半透明背景（これで白背景でも絶対見える） */
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        /* ナビと揃えた薄い白の枠線 */
-        border-radius: 50px;
-        /* 綺麗に丸くする */
-        transition: all 0.3s;
-    }
-
-    .toggle:hover {
-        background-color: rgba(109, 35, 141, 1);
-    }
-
-    .toggle span {
-        display: block;
-        position: absolute;
-        left: 10px;
-        width: 24px;
-        height: 3px;
-        background-color: #fff;
-        border-radius: 4px;
-        transition: all 0.5s;
-    }
-
-    .toggle span:nth-child(1) {
-        top: 13px;
-    }
-
-    .toggle span:nth-child(2) {
-        top: 21px;
-    }
-
-    .toggle span:nth-child(3) {
-        top: 29px;
-    }
-
-    .active .toggle {
-        position: fixed;
-    }
-
-    /* ×ボタンに変身 */
-    .active .toggle span:nth-child(1) {
-        transform: translateY(8px) rotate(-45deg);
-    }
-
-    .active .toggle span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .active .toggle span:nth-child(3) {
-        transform: translateY(-8px) rotate(45deg);
-    }
-
-    /* FV調整 */
     #header {
         height: 500px;
     }
@@ -434,14 +335,86 @@ ul {
         font-size: 1.5rem;
     }
 
-    /* リストを縦並びにする */
-    .skills-list,
-    .works-list {
-        flex-direction: column;
-        gap: 20px;
+    /* Navigation */
+
+    #nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        transition: 0.3s;
+        z-index: 10;
     }
 
-    .skill-card,
+    .active #nav {
+        top: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        background-color: #6d238d;
+    }
+
+    .nav-list a {
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Toggle Button */
+
+    .toggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 40px;
+        height: 30px;
+        z-index: 20;
+        cursor: pointer;
+    }
+
+    .toggle span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        box-shadow: 0 0 3px rgba(0,0,0,.6);
+        transition: 0.3s;
+    }
+
+    .toggle span:nth-child(1) {
+        top: 0;
+    }
+
+    .toggle span:nth-child(2) {
+        top: 13px;
+    }
+
+    .toggle span:nth-child(3) {
+        top: 26px;
+    }
+
+    .active .toggle span:nth-child(1) {
+        transform: translateY(13px) rotate(-45deg);
+    }
+
+    .active .toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .active .toggle span:nth-child(3) {
+        transform: translateY(-13px) rotate(45deg);
+    }
+
+    /* Skills */
+
+    .skill-card {
+        width: 100%;
+    }
+
+    /* Works */
+
     .work-card {
         width: 100%;
     }
