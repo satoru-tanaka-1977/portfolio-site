@@ -2,6 +2,10 @@
 
 /* Foundation */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Noto Sans JP", sans-serif;
     color: #333;
@@ -104,15 +108,6 @@ ul {
 .nav-list a:hover {
     opacity: 0.7;
 }
-
-/* Scroll Position */
-
-/* #about,
-#skills,
-#works,
-#contact {
-    scroll-margin-top: 120px;
-} */
 
 /* About */
 
@@ -287,6 +282,10 @@ ul {
     font-weight: 700;
 }
 
+.contact-links a:hover {
+    opacity: .7;
+}
+
 #contact .contact-links p {
     margin-bottom: 10px;
 }
@@ -312,6 +311,17 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+
+    #about,
+    #skills,
+    #works,
+    #contact {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 1.7rem;
+    }
 
     /* Header */
 
@@ -379,7 +389,7 @@ ul {
         width: 100%;
         height: 3px;
         background-color: #fff;
-        box-shadow: 0 0 3px rgba(0,0,0,.6);
+        box-shadow: 0 0 3px rgba(0, 0, 0, .6);
         transition: 0.3s;
     }
 
@@ -407,6 +417,20 @@ ul {
         transform: translateY(-13px) rotate(45deg);
     }
 
+    /* About */
+
+    .about-image {
+        width: 60%;
+        max-width: 220px;
+        float: none;
+        margin: 0 auto 30px;
+    }
+
+    .about-catch {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
     /* Skills */
 
     .skill-card {
@@ -417,5 +441,9 @@ ul {
 
     .work-card {
         width: 100%;
+    }
+
+    .work-card img {
+        height: auto;
     }
 }
