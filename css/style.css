@@ -269,6 +269,11 @@ ul {
     padding: 10px 20px 20px;
 }
 
+.works-list .work-card:last-child:nth-child(odd) {
+    width: calc((100% - 30px) / 2);
+    margin: 0 auto;
+}
+
 /* Contact */
 
 #contact {
