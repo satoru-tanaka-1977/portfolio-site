@@ -258,6 +258,13 @@ ul {
     font-weight: 700;
 }
 
+.work-type {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #999;
+    margin-left: 6px;
+}
+
 .work-skill {
     padding: 0 20px;
     font-size: 0.9rem;
